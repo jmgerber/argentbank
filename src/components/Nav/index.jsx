@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import argentBankLogo from '../assets/argentBankLogo.png'
+import argentBankLogo from '../../assets/argentBankLogo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons"
 // import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons"
@@ -48,5 +48,9 @@ const NavContainer = styled.nav`
 
   & .main-nav-item {
     margin-right: 0.5rem;
+
+    &:hover {
+      text-decoration: underline 2px;
+    }
   }
 `

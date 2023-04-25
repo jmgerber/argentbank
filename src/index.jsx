@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom'
-import Router from './router/router.jsx'
-import Nav from './components/Nav.jsx'
+import Router from './router/router'
+import Nav from './components/Nav'
 import Footer from './components/Footer'
 import { createGlobalStyle } from 'styled-components'
 

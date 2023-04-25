@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import Feature from "../components/Feature"
-import HeroBanner from "../components/HeroBanner"
-import iconChat from '../assets/icon-chat.png'
-import iconMoney from '../assets/icon-money.png'
-import iconSecurity from '../assets/icon-security.png'
+import Feature from "../../components/Feature"
+import HeroBanner from "../../components/HeroBanner"
+import iconChat from '../../assets/icon-chat.png'
+import iconMoney from '../../assets/icon-money.png'
+import iconSecurity from '../../assets/icon-security.png'
 
 const featuresList = [
   {

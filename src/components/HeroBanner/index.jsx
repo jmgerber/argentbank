@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import BannerImage from '../assets/bank-tree.jpeg'
+import BannerImage from '../../assets/bank-tree.jpeg'
 
 function HeroBanner() {
   return (

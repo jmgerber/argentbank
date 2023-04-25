@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Account from "../components/Account"
+import Account from "../../components/Account"
 
 const accountsList = [
   {

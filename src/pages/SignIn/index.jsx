@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import SignInCard from "../components/SignInCard"
+import SignInCard from "../../components/SignInCard"
 
 function SignIn() {
   return (
