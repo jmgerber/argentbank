@@ -6,6 +6,9 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import { createGlobalStyle } from 'styled-components'
 
+import { store } from './utils/store'
+import { Provider } from 'react-redux';
+
 const GlobalStyle = createGlobalStyle`
   * {
     text-decoration: none;
@@ -45,11 +48,13 @@ const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <GlobalStyle />
-      <Nav />
-      <Router />
-      <Footer />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Nav />
+        <Router />
+        <Footer />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
