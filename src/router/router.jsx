@@ -1,16 +1,22 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
-import SignIn from '../pages/SignIn'
-import User from '../pages/User'
+import Profile from '../features/profile/Profile'
 import Error from '../pages/Error'
+import Login from '../features/auth/Login'
+import RequireAuth from '../features/auth/RequireAuth'
 
 function Router() {
   return (
     <Routes>
+      {/* Public routes */}
       <Route path="/" element={<Home />} />
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/user" element={<User />} />
+      <Route path="signin" element={<Login />} />
       <Route path="*" element={<Error />} />
+
+      {/* Protected routes */}
+      <Route element={<RequireAuth />}>
+        <Route path="user" element={<Profile />} />
+      </Route>
     </Routes>
   )
 }
